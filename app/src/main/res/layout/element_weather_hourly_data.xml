@@ -1,0 +1,58 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/elementMessageConstraint"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/image_view_rail_road_item_margin">
+
+    <TextView
+        android:id="@+id/textViewWeatherHeadline"
+        style="@style/BarrierMessageItemStatusStyle"
+        android:text="Weather Data:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewWeatherTime"
+        style="@style/BarrierMessageItemTimeStyle"
+        android:layout_below="@id/textViewWeatherHeadline"
+        android:layout_alignStart="@id/textViewWeatherHeadline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWeatherHeadline"
+        tools:text="2023-04-13T00:00" />
+
+    <TextView
+        android:id="@+id/textViewWeatherTemperature"
+        style="@style/BarrierMessageItemTimeStyle"
+        android:layout_below="@id/textViewWeatherHeadline"
+        android:layout_alignStart="@id/textViewWeatherHeadline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWeatherTime"
+        tools:text="2023-04-13T00:00" />
+
+    <TextView
+        android:id="@+id/textViewWeatherCondition"
+        style="@style/BarrierMessageItemTimeStyle"
+        android:layout_below="@id/textViewWeatherHeadline"
+        android:layout_alignStart="@id/textViewWeatherHeadline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWeatherTemperature"
+        tools:text="2023-04-13T00:00" />
+
+    <TextView
+        android:id="@+id/textViewWeatherWindSpeed"
+        style="@style/BarrierMessageItemTimeStyle"
+        android:layout_below="@id/textViewWeatherHeadline"
+        android:layout_alignStart="@id/textViewWeatherHeadline"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWeatherCondition"
+        tools:text="2023-04-13T00:00" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

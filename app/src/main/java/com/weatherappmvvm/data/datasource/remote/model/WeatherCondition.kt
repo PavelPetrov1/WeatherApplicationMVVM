@@ -1,0 +1,25 @@
+package com.weatherappmvvm.data.datasource.remote.model
+
+sealed class WeatherCondition(val condition: String) {
+    object ClearSky : WeatherCondition("Clear sky")
+    object MainlyClear : WeatherCondition("Mainly clear")
+    object FogAndRime : WeatherCondition("Fog and depositing rime fog")
+    object LightDrizzle : WeatherCondition("Drizzle: Light intensity")
+    object DenseDrizzle : WeatherCondition("Drizzle: Dense intensity")
+    object LightFreezingDrizzle : WeatherCondition("Freezing Drizzle: Light intensity")
+    object DenseFreezingDrizzle : WeatherCondition("Freezing Drizzle: Dense intensity")
+    object SlightRain : WeatherCondition("Rain: Slight intensity")
+    object ModerateRain : WeatherCondition("Rain: Moderate intensity")
+    object LightFreezingRain : WeatherCondition("Freezing Rain: Light intensity")
+    object HeavyFreezingRain : WeatherCondition("Freezing Rain: Heavy intensity")
+    object SlightSnow : WeatherCondition("Snow fall: Slight intensity")
+    object ModerateSnow : WeatherCondition("Snow fall: Moderate intensity")
+    object SnowGrains : WeatherCondition("Snow grains")
+    object SlightRainShowers : WeatherCondition("Rain showers: Slight intensity")
+    object ViolentRainShowers : WeatherCondition("Rain showers: Violent intensity")
+    object SlightSnowShowers : WeatherCondition("Snow showers: Slight intensity")
+    object HeavySnowShowers : WeatherCondition("Snow showers: Heavy intensity")
+    object SlightThunderstorm : WeatherCondition("Thunderstorm: Slight intensity")
+    object HeavyHailThunderstorm : WeatherCondition("Thunderstorm with heavy hail")
+    object Unknown : WeatherCondition("Unknown weather code")
+}

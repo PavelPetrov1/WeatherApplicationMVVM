@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">WeatherAppMVVM</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <!-- Strings used for HomeFragment -->
+    <string name="home_fragment_text_view_fetch_data">Fetching Data</string>
+    <string name="home_fragment_button_sofia">Sofia</string>
+    <string name="home_fragment_button_plovdiv">Plovdiv</string>
+    <string name="home_fragment_button_burgas">Burgas</string>
+    <!-- Strings used for WeatherHourlyDataAdapter -->
+    <string name="weather_hourly_data_adapter_headline">Weather in: %1$s</string>
+    <string name="weather_hourly_data_adapter_time">Time: %1$s</string>
+    <string name="weather_hourly_data_adapter_temperature">Temperature: %1$f</string>
+    <string name="weather_hourly_data_adapter_condition">Condition: %1$s</string>
+    <string name="weather_hourly_data_adapter_windSpeed">Wind Speed: %1$f</string>
+
+</resources>
