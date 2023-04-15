@@ -4,19 +4,19 @@
     android:id="@+id/elementMessageConstraint"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="@dimen/image_view_rail_road_item_margin">
+    android:layout_margin="@dimen/image_view_weather_item_margin">
 
     <TextView
         android:id="@+id/textViewWeatherHeadline"
-        style="@style/BarrierMessageItemStatusStyle"
-        android:text="Weather Data:"
+        style="@style/CityLocationTextViewStyle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Weather Data:" />
 
     <TextView
         android:id="@+id/textViewWeatherTime"
-        style="@style/BarrierMessageItemTimeStyle"
+        style="@style/WeatherTextViewStyle"
         android:layout_below="@id/textViewWeatherHeadline"
         android:layout_alignStart="@id/textViewWeatherHeadline"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,7 +26,7 @@
 
     <TextView
         android:id="@+id/textViewWeatherTemperature"
-        style="@style/BarrierMessageItemTimeStyle"
+        style="@style/WeatherTextViewStyle"
         android:layout_below="@id/textViewWeatherHeadline"
         android:layout_alignStart="@id/textViewWeatherHeadline"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,7 +36,7 @@
 
     <TextView
         android:id="@+id/textViewWeatherCondition"
-        style="@style/BarrierMessageItemTimeStyle"
+        style="@style/WeatherTextViewStyle"
         android:layout_below="@id/textViewWeatherHeadline"
         android:layout_alignStart="@id/textViewWeatherHeadline"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,7 +46,7 @@
 
     <TextView
         android:id="@+id/textViewWeatherWindSpeed"
-        style="@style/BarrierMessageItemTimeStyle"
+        style="@style/WeatherTextViewStyle"
         android:layout_below="@id/textViewWeatherHeadline"
         android:layout_alignStart="@id/textViewWeatherHeadline"
         app:layout_constraintBottom_toBottomOf="parent"

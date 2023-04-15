@@ -7,7 +7,7 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 
-// Here we setup our dependency injection for railroad rest api
+// Here we setup our dependency injection for weather rest api
 @Module
 @InstallIn(SingletonComponent::class)
 object RequestModule {
